@@ -1,3 +1,3 @@
 # 发布地址
 
-## [source.zgqinc.gq](https://source.zgqinc.gq/)
+## [dizhi66.top](https://dizhi66.top)
