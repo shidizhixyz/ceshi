@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>各种源大型整合</title>
+    <meta name="description" content="📦个人搜集 | 书源、图源、订阅源、规则、直播源、各种源 大型整合" />
+    <meta property="og:url" content="https://dizhi66.top" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="source" />
+    <meta property="og:description" content="📦个人搜集 | 书源、图源、订阅源、规则、直播源、各种源 大型整合" />
+    <meta property="og:image" content="https://socialify.git.ci/zgq-inc/source/image?description=1&descriptionEditable=%F0%9F%93%A6%E4%B8%AA%E4%BA%BA%E6%90%9C%E9%9B%86%20%7C%20%E4%B9%A6%E6%BA%90%E3%80%81%E5%9B%BE%E6%BA%90%E3%80%81%E8%AE%A2%E9%98%85%E6%BA%90%E3%80%81%E8%A7%84%E5%88%99%E3%80%81%E7%9B%B4%E6%92%AD%E6%BA%90%E3%80%81%E5%90%84%E7%A7%8D%E6%BA%90%20%E5%A4%A7%E5%9E%8B%E6%95%B4%E5%90%88&font=Bitter&forks=1&name=1&owner=1&pattern=Signal&stargazers=1&theme=Light" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="dizhi66.top" />
+    <meta property="twitter:url" content="https://dizhi66.top" />
+    <meta name="twitter:title" content="source" />
+    <meta name="twitter:description" content="📦个人搜集 | 书源、图源、订阅源、规则、直播源、各种源 大型整合" />
+    <meta name="twitter:image" content="https://socialify.git.ci/zgq-inc/source/image?description=1&descriptionEditable=%F0%9F%93%A6%E4%B8%AA%E4%BA%BA%E6%90%9C%E9%9B%86%20%7C%20%E4%B9%A6%E6%BA%90%E3%80%81%E5%9B%BE%E6%BA%90%E3%80%81%E8%AE%A2%E9%98%85%E6%BA%90%E3%80%81%E8%A7%84%E5%88%99%E3%80%81%E7%9B%B4%E6%92%AD%E6%BA%90%E3%80%81%E5%90%84%E7%A7%8D%E6%BA%90%20%E5%A4%A7%E5%9E%8B%E6%95%B4%E5%90%88&font=Bitter&forks=1&name=1&owner=1&pattern=Signal&stargazers=1&theme=Light" />
+
+    <link rel="stylesheet" href="../assets/css/oui.css">
+
+  </head>
+  <style>
+    	.toast-container {
+    position: fixed;
+    z-index: 9999;
+    bottom: 75px;
+    left: 1px;
+    right: 1px;
+    -webkit-transition: opacity .8s;
+    transition: opacity .8s;
+    opacity: 0
+	}
+
+		.toast-container.toast-active {
+    opacity: 1
+	}
+
+		.toast-message-container {
+    font-size: 16px;
+    width: 80px;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.7);
+	}
+	
+		.text-container {
+    position: fixed;
+    z-index: 9999;
+    bottom: 75px;
+    left: 1px;
+    right: 1px;
+    -webkit-transition: opacity .8s;
+    transition: opacity .8s;
+    opacity: 0
+	}
+
+		.text-container.text-active {
+    opacity: 1
+	}
+
+		.text-message-container {
+    font-size: 16px;
+    width: 225px;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.7);
+	}
+    .button { 
+	 -webkit-transition-duration: 0.4s; 
+	 transition-duration: 0.4s; 
+	 padding: 5px 20px; 
+	 text-align: center; 
+	 background-color: white; 
+	 color: black; 
+	 border: 2px solid #000000; 
+	 border-radius:50px; 
+	} 
+	.button:hover { 
+	 background-color: #000000; 
+	 color: white; 
+	} 
+	.btn-76,
+	.btn-76 *,
+	.btn-76 :after,
+	.btn-76 :before,
+	.btn-76:after,
+	.btn-76:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+	.btn-76 {
+  -webkit-tap-highlight-color: transparent;
+  appearance: button;
+  background-color: #999999;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  width: 155px;
+}
+	.btn-76:disabled {
+  cursor: default;
+}
+	.btn-76:-moz-focusring {
+  outline: auto;
+}
+	.btn-76 svg {
+  display: block;
+  vertical-align: middle;
+}
+	.btn-76 [hidden] {
+  display: none;
+}
+	.btn-76 {
+  --neon: #0ea5e9;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  mask-image: none;
+  outline: 4px solid #fff;
+  outline-offset: -4px;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.1s linear 0.05s;
+}
+	.btn-76:hover {
+  background: var(--neon);
+  box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon);
+  color: #fff;
+  outline-color: transparent;
+  transition: 0.1s linear 0.3s;
+}
+	.btn-76 span {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+	.btn-76 .top {
+  border-top: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+	.btn-76:hover .top {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.1s linear;
+}
+	.btn-76 .right {
+  border-right: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+	.btn-76:hover .right {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.1s linear 0.1s;
+}
+	.btn-76 .bottom {
+  border-bottom: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+	.btn-76:hover .bottom {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.1s linear 0.2s;
+}
+	.btn-76 .left {
+  border-left: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+	.btn-76:hover .left {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.1s linear 0.3s;
+}
+  </style>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>书源、图源、订阅源、规则、直播源、各种源 大型整合</h1>
+        <h2><a href="https://dizhi66.top">项目地址</a></h2>
+        <h3><a href="https://dizhi66.top/">个人主页</a></h3>
+
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+           <a href="https://dizhi66.top">各种源</p></a>
+        
+        <p>&copy;2024 ZGQ Inc. <span>All rights reserved</span>.</p>
+      </footer>
+    </div>
+    
+    <script src="../assets/js/scale.fix.js"></script>
+    
+    <script src="clipboard.min.js"></script>
+    
+    <script>
+      var btns = document.querySelectorAll('button');
+      var clipboard = new ClipboardJS(btns);
+
+      clipboard.on('success', function (e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+      });
+
+      clipboard.on('error', function (e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+      });
+    </script>
+    
+	<script>
+    	var Toast = {};
+Toast.toast = function(msg) {
+    var active = "toast-active";
+    var div = document.createElement("div");
+    div.classList.add("toast-container")
+    div.innerHTML = '<div class="toast-message-container">' + msg + "</div>"
+    div.addEventListener("webkitTransitionEnd", function() {
+        div.classList.contains(active) || div.parentNode.removeChild(div)
+    });
+    document.body.appendChild(div)
+    div.offsetHeight
+    div.classList.add(active)
+    setTimeout(function() {
+        div.classList.remove(active)
+    }, 1500)
+}
+	</script>
+	
+    <script>
+        function showToast() {
+            Toast.toast("复制成功");   
+        }
+    </script>
+    
+    <script>
+    	var Text = {};
+Text.text = function(msg) {
+    var active = "text-active";
+    var div = document.createElement("div");
+    div.classList.add("text-container")
+    div.innerHTML = '<div class="text-message-container">' + msg + "</div>"
+    div.addEventListener("webkitTransitionEnd", function() {
+        div.classList.contains(active) || div.parentNode.removeChild(div)
+    });
+    document.body.appendChild(div)
+    div.offsetHeight
+    div.classList.add(active)
+    setTimeout(function() {
+        div.classList.remove(active)
+    }, 1500)
+}
+	</script>
+	
+    <script>
+        function showText() {
+            Text.text("正在跳转阅读APP，请允许跳转");   
+        }
+    </script>
+    
+  </body>
+</html>
